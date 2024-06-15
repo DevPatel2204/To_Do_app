@@ -14,6 +14,10 @@
 		2F895D0B2C1DAE71006368A6 /* To_Do_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D0A2C1DAE71006368A6 /* To_Do_appTests.swift */; };
 		2F895D152C1DAE71006368A6 /* To_Do_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D142C1DAE71006368A6 /* To_Do_appUITests.swift */; };
 		2F895D172C1DAE71006368A6 /* To_Do_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D162C1DAE71006368A6 /* To_Do_appUITestsLaunchTests.swift */; };
+		2F895D262C1DAED5006368A6 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D252C1DAED5006368A6 /* TaskView.swift */; };
+		2F895D282C1DAFCC006368A6 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D272C1DAFCC006368A6 /* TaskRow.swift */; };
+		2F895D2A2C1DB243006368A6 /* AddtaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D292C1DB243006368A6 /* AddtaskView.swift */; };
+		2F895D2C2C1DB59A006368A6 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F895D2B2C1DB59A006368A6 /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		2F895D102C1DAE71006368A6 /* To_Do_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = To_Do_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F895D142C1DAE71006368A6 /* To_Do_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_appUITests.swift; sourceTree = "<group>"; };
 		2F895D162C1DAE71006368A6 /* To_Do_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F895D252C1DAED5006368A6 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		2F895D272C1DAFCC006368A6 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		2F895D292C1DB243006368A6 /* AddtaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtaskView.swift; sourceTree = "<group>"; };
+		2F895D2B2C1DB59A006368A6 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +102,10 @@
 		2F895CF82C1DAE70006368A6 /* To_Do_app */ = {
 			isa = PBXGroup;
 			children = (
-				2F895CF92C1DAE70006368A6 /* To_Do_appApp.swift */,
-				2F895CFB2C1DAE70006368A6 /* ContentView.swift */,
+				2F895D242C1DAE92006368A6 /* Components */,
+				2F895D232C1DAE82006368A6 /* Views */,
 				2F895CFD2C1DAE71006368A6 /* Assets.xcassets */,
+				2F895CF92C1DAE70006368A6 /* To_Do_appApp.swift */,
 				2F895CFF2C1DAE71006368A6 /* Preview Content */,
 			);
 			path = To_Do_app;
@@ -125,6 +134,25 @@
 				2F895D162C1DAE71006368A6 /* To_Do_appUITestsLaunchTests.swift */,
 			);
 			path = To_Do_appUITests;
+			sourceTree = "<group>";
+		};
+		2F895D232C1DAE82006368A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F895CFB2C1DAE70006368A6 /* ContentView.swift */,
+				2F895D252C1DAED5006368A6 /* TaskView.swift */,
+				2F895D292C1DB243006368A6 /* AddtaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F895D242C1DAE92006368A6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F895D272C1DAFCC006368A6 /* TaskRow.swift */,
+				2F895D2B2C1DB59A006368A6 /* AddButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F895D262C1DAED5006368A6 /* TaskView.swift in Sources */,
 				2F895CFC2C1DAE70006368A6 /* ContentView.swift in Sources */,
+				2F895D2A2C1DB243006368A6 /* AddtaskView.swift in Sources */,
+				2F895D2C2C1DB59A006368A6 /* AddButton.swift in Sources */,
 				2F895CFA2C1DAE70006368A6 /* To_Do_appApp.swift in Sources */,
+				2F895D282C1DAFCC006368A6 /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
