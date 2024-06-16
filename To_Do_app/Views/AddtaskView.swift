@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct AddtaskView: View {
+    @EnvironmentObject var realmManager : RealmManager
     @State private var newtask : String = ""
     @Environment (\.dismiss) var dismiss
+    
     var body: some View {
         ZStack {
             Color(hue: 0.086, saturation: 0.141, brightness: 0.972)
@@ -28,7 +30,9 @@ struct AddtaskView: View {
                     .padding()
                 
                 Button(action: {
-                    print("Task Successfully added")
+                    if newtask != ""{
+                        realmManager.addtask(taskTitle: newtask)
+                    }
                     dismiss()
                 }, label: {
                     Text("Add Task")
@@ -47,4 +51,5 @@ struct AddtaskView: View {
 
 #Preview {
     AddtaskView()
+        .environmentObject(RealmManager())
 }
